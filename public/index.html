@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Laptop Recommender</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Laptop Recommender</h1>
+      <small>Choose RAM, storage, price and see matching laptops</small>
+    </header>
+
+    <section class="controls">
+      <select id="purpose"><option value="">Any purpose</option><option>Office</option><option>Student</option><option>Gaming</option><option>Content Creation</option><option>Business</option></select>
+      <select id="ram"><option value="">Any RAM</option><option value="4">4 GB</option><option value="8">8 GB</option><option value="16">16 GB</option><option value="32">32+ GB</option></select>
+      <select id="storageType"><option value="">Any Storage</option><option>SSD</option><option>HDD</option></select>
+      <input id="maxPrice" type="number" placeholder="Max price (₹)" />
+      <input id="q" placeholder="Search model/brand" />
+      <button id="apply">Search</button>
+      <button id="clear">Clear</button>
+    </section>
+
+    <div id="meta"></div>
+    <main id="results" class="grid"></main>
+
+    <footer>
+      <a href="/admin.html">Admin panel</a>
+    </footer>
+  </div>
+  <script src="/client.js"></script>
+</body>
+</html>
