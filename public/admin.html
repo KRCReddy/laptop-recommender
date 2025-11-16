@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Admin - Laptop Recommender</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="wrap admin">
+    <h2>Admin Panel</h2>
+    <p>Enter admin passphrase to load products and inquiries.</p>
+    <input id="pass" placeholder="admin passphrase" />
+    <button id="load">Load</button>
+    <hr />
+    <div id="adminArea" style="display:none">
+      <h3>Products</h3>
+      <button id="newProduct">Add new product</button>
+      <div id="prodList"></div>
+      <hr />
+      <h3>Inquiries</h3>
+      <pre id="inquiries" style="background:#f5f5f5;padding:8px;max-height:300px;overflow:auto"></pre>
+    </div>
+  </div>
+  <script src="/admin.js"></script>
+</body>
+</html>
